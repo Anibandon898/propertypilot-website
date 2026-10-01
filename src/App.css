@@ -14,6 +14,7 @@
 }
 
 * {
+
   box-sizing: border-box;
 }
 
@@ -7834,4 +7835,51 @@ a {
 
 .propertypilot-home .home-intro p {
   color: #57534e;
+}
+/* =========================================================
+   MOBILE NAVIGATION
+   Added without changing existing desktop design
+========================================================= */
+
+.mobile-menu {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #11110f;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: #f7f4ed;
+    border-top: 1px solid rgba(17, 17, 15, 0.08);
+    padding: 10px 20px 18px;
+  }
+
+  .mobile-nav .nav-link {
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(17, 17, 15, 0.08);
+  }
+
+  .mobile-nav .nav-cta {
+    margin-top: 12px;
+    text-align: center;
+  }
 }
